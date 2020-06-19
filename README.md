@@ -26,14 +26,22 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
-    
+    `.forEach` allows you to filter through the array and mutate information within an array without returning a new item. `.map` returns a new array passing it through a function that makes that array different than the original array.
+
 2. Explain the difference between a callback and a higher order function.
+    A higher order function receives a callback function as a parameter. Accordingly, callback functions are passed into higher order functions as an arguement. Using HOF and CB functions allows us to create preset CB functions that get invoked when we pass through arguements in the HOF.
 
 3. What is closure?
+    Closure is a concept withing Javascript. The rules of closure allow inner functions to access varibles in outer functions as well as variables within the global scope. However, outer functions cannot access variables that are within inner fuctions. 
 
 4. Describe the four rules of the 'this' keyword.
-
+    1. window binding - "this", by default, refers to the window/console if it is not bound to something else by the rules below. 
+    2. implicit binding - "this" refers to what is left of the dot in the invoked function/method
+    3. new binding - the "new" word creates a new object and "this" refers to the new object
+    4. explicit binding - by using `.call`, `.apply`, or `.bind` we can explicitly attatch "this" to something.
 5. Why do we need super() in an extended class?
+    The super simplifes our code. It allows us to pull all of the properties of the parent object to the extended class. 
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -43,12 +51,12 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 > This section should include instruction for the sprint challenge. These should only cover things that are _not_ being evaluated by the challenge itself, e.g. environment/project setup, link to a starter project, etc. In general, this will be the following Git fork, clone, branch, commit, push, create pull request flow, though may need to be adapted for some specific challenges.
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [x] Create a forked copy of this project
+- [x] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [x] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Project Requirements
 
